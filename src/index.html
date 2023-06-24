@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/small.css">
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css">
+    <title>Food Recipes Website</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="/index.html"><img src="/km-logo-header.png" alt="Kitchen Master Logo Image"></a>
+      </div>
+      <div class="recipes">
+        <a href="/recipes/index.html"><i class="icons fa-solid fa-utensils"></i></i></a>
+      </div>
+      <div class="header-icons">
+        <a href=""><i class="icons fa-brands fa-facebook"></i></a>
+        <a href=""><i class="icons fa-brands fa-twitter"></i></a>
+        <a href=""><i class="icons fa-brands fa-square-instagram"></i></a>
+      </div>
+    </header>
+    <main>
+      <div class="meal-wrapper">
+        <div class="meal-search">
+          <h2>Find meals for your ingredients</h2>
+          <blockquote>Real food does not have ingredients, real food is ingredients.
+            <cite>- Jamie Oliver</cite>
+          </blockquote>
+          <div class="meal-search-box">
+            <input type="text" class="search-control" placeholder="Type an ingredient" id="search-input">
+            <button type="submit" class="search-btn btn" id="search-btm">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+        <div class="meal-result">
+          <h2 class="title">Your Search Results:</h2>
+          <div id="meal">
+            <div class="meal-item">
+              <div class="meal-img">
+                <img src="/food.jpg" alt="food image placeholder">
+              </div>
+              <div class="meal-name">
+                <h3>Potato Chips</h3>
+                <a href="#" class="recipe-btn">Get Recipe</a>
+              </div>
+            </div>
+            <div class="meal-item">
+              <div class="meal-img">
+                <img src="/food.jpg" alt="food image placeholder">
+              </div>
+              <div class="meal-name">
+                <h3>Potato Chips</h3>
+                <a href="#" class="recipe-btn">Get Recipe</a>
+              </div>
+            </div>
+            <div class="meal-item">
+              <div class="meal-img">
+                <img src="/food.jpg" alt="food image placeholder">
+              </div>
+              <div class="meal-name">
+                <h3>Potato Chips</h3>
+                <a href="#" class="recipe-btn">Get Recipe</a>
+              </div>
+            </div>
+            <div class="meal-item">
+              <div class="meal-img">
+                <img src="/food.jpg" alt="food image placeholder">
+              </div>
+              <div class="meal-name">
+                <h3>Potato Chips</h3>
+                <a href="#" class="recipe-btn">Get Recipe</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="meal-details">
+          <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <div class="meal-details-content">
+            <h2 class="recipe-title">Meal Name</h2>
+            <p class="recipe-category">Category Name</p>
+            <div class="recipe-instruct">
+              <h3>Instructions</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit mauris accumsan, tincidunt scelerisque natoque urna nullam volutpat auctor libero. Phasellus auctor eleifend iaculis quam condimentum ad neque magnis vel senectus gravida, ullamcorper facilisi cras vitae nunc erat lobortis natoque sociosqu ridiculus. Ligula magna scelerisque ad nisi faucibus fermentum, viverra netus eu dictumst elementum pulvinar dictum, sed donec risus nullam quam.</p>
+            </div>
+            <div class="recipe-meal-img">
+              <img src="food.jpg" alt="food placeholder image">
+            </div>
+            <div class="recipe-link">
+              <a href="#" target="_blank">Watch Video</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/185d765a42.js" crossorigin="anonymous" defer></script>
+  </body>
+</html>

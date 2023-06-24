@@ -1,0 +1,39 @@
+@media only screen and (min-width: 37.5rem){
+    #meal {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        list-style: none;
+        gap: 50px;
+    }
+
+    .meal-details {
+        width: 600px;
+    }
+
+    .recipe-meal-img img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .meal-img-saved {
+        grid-column: 1/2;
+    }
+
+    .meal-name-saved{
+        grid-column: 2/3;
+    }
+
+    .meal-instruct-saved{
+        grid-column: 3/4;
+    }
+
+    .del-btn {
+        grid-column: 4/5;
+        text-align: center;
+    }
+
+    .meal-item-saved {
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr 0.5fr;
+    }
+}

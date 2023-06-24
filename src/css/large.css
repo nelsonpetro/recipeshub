@@ -1,0 +1,19 @@
+@media only screen and (min-width: 64rem){
+    #meal {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        list-style: none;
+        gap: 50px;
+    }
+
+    .meal-details {
+        width: 800px;
+    }
+
+    .recipe-meal-img img {
+        width: 250px;
+        height: 250px;
+    }
+
+
+}
