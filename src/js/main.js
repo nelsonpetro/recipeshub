@@ -3,6 +3,8 @@ const mealList = document.querySelector("#meal");
 const mealDetailsContent = document.querySelector(".meal-details-content");
 const recipeCloseBtn = document.querySelector("#recipe-close-btn");
 
+//Comments for commit
+
 searchBtn.addEventListener("click", getMealList);
 mealList.addEventListener("click", getMealRecipe);
 recipeCloseBtn.addEventListener("click", () => {
