@@ -211,6 +211,18 @@ main {
     opacity: 0.9;
 }
 
+.recipe-save-btn {
+    background-color: #E05C0D;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    transition: 0.2s linear;
+}
+
+.recipe-save-btn:hover {
+    scale: 1.2;
+}
+
 .recipe-title {
     letter-spacing: 1px;
     padding-bottom: 1rem;
@@ -219,10 +231,11 @@ main {
 .recipe-category {
     background-color: #ffffff;
     font-weight: 600;
+    font-size: 1.2rem;
     color: var(--main-color);
-    display: inline-block;
-    padding: 0.2rem 0.5rem;
+    max-width: 150px;
     border-radius: 0.3rem;
+    margin: 0 auto;
 }
 
 .recipe-instruct {
@@ -300,4 +313,14 @@ main {
     font-weight: 700;
     text-align: center;
     grid-template-columns: 1fr!important;
+}
+
+.del-btn {
+    transition: 0.2s linear;
+}
+
+.del-btn:hover {
+    color: red;
+    scale: 1.2;
+    cursor: pointer;
 }
