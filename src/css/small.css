@@ -45,6 +45,22 @@ header {
     align-items: center;
 }
 
+.recipes a{
+    transition: linear 0.2s;
+}
+
+.recipes a:hover{
+    transform: scale(1.2);
+}
+
+.recipes a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
 .icons {
     font-size: 35px;
     color: white;
@@ -256,7 +272,7 @@ main {
 
 .recipe-link a{
     color: #ffffff;
-    font-size: 1.2 rem;
+    font-size: 1.2rem;
     font-weight: 700;
     transition: all 0.4s linear;
 }
@@ -279,6 +295,7 @@ main {
 }
 
 .meal-details-content {
+    text-align: center;
     margin: 2rem;
 }
 
@@ -298,7 +315,7 @@ main {
     max-width: 200px;
 }
 
-.meal-name-saved, .meal-instruct-saved {
+.search-control.meal-name-saved, .meal-instruct-saved {
     text-align: center;
 }
 
@@ -323,4 +340,38 @@ main {
     color: red;
     scale: 1.2;
     cursor: pointer;
+}
+
+#sortByName, #sortByNameSaved {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: var(--main-color);
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    display: block;
+    width: 175px;
+    margin: 1rem auto;
+    border-radius: 2rem;
+    transition: all 0.2s linear;   
+}
+
+#sortByName:hover, #sortByNameSaved:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#filterInput, #filterInputSaved{
+    margin: 1.2rem 0;
+    display: flex;
+    align-items: stretch;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-family: inherit;
+    outline: 0;
+    border: 1px solid var(--main-color-dark);
+    color: var(--main-color-dark);
 }

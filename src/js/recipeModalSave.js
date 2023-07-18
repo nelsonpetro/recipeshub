@@ -1,9 +1,8 @@
 import { saveRecipe } from "./saveRecipes";
 
-const mealList = document.querySelector("#meal");
+const mealList = document.querySelector(".content");
 const mealDetailsContent = document.querySelector(".meal-details-content");
 const recipeCloseBtn = document.querySelector("#recipe-close-btn");
-const saveBtn = document.querySelector("#recipe-save-btn");
 let mealData;
 
 recipeCloseBtn.addEventListener("click", () => {
@@ -44,17 +43,6 @@ function mealRecipeModal(meal) {
     mealDetailsContent.innerHTML = html;
     mealDetailsContent.parentElement.classList.add("showRecipe");
 }
-
-saveBtn.addEventListener("click", () => {
-
-    saveRecipe(mealData.meals[0]);
-    const parentElement = mealDetailsContent.parentElement;
-    parentElement.classList.remove("showRecipe");
-
-    setTimeout(() => {
-        alert("The Recipe has been saved!");
-    }, 100);
-});
 
 
 

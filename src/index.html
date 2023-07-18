@@ -15,7 +15,7 @@
         <a href="/index.html"><img src="/km-logo-header.png" alt="Kitchen Master Logo Image"></a>
       </div>
       <div class="recipes">
-        <a href="/recipes/index.html"><i class="icons fa-solid fa-utensils"></i></i></a>
+        <a href="/recipes/index.html"><i class="icons fa-solid fa-utensils"></i><p>Saved Recipes</p></a>
       </div>
       <div class="header-icons">
         <a href=""><i class="icons fa-brands fa-facebook"></i></a>
@@ -39,6 +39,8 @@
         </div>
         <div class="meal-result">
           <h2 class="title">Your Search Results:</h2>
+          <button id="sortByName">Sort by Name</button>
+          <input type="text" id="filterInput" placeholder="Filter by name...">
           <div id="meal">
             <!-- <div class="meal-item">
               <div class="meal-img">
@@ -78,6 +80,7 @@
     <script src="./js/mainList.js" type="module" defer></script>
     <script src="./js/recipeModal.js" type="module" defer></script>
     <script src="./js/saveRecipes.js" type="module" defer></script>
+    <script src="./js/sortFunctions.js" defer></script>
     <script src="https://kit.fontawesome.com/185d765a42.js" crossorigin="anonymous" defer></script>
   </body>
 </html>
